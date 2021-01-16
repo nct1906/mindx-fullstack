@@ -1,0 +1,24 @@
+.container{
+    margin:0 auto;
+    padding:5vw;
+    text-align: center;
+    width:50vw;
+    height:90vh;
+    background-color: #1D4F44;
+    color:white;
+    font-family: Arial, sans-serif;
+}
+input{
+    width:15vw;
+    border:none;
+    padding:1vw;
+    font-family: Arial, sans-serif;
+}
+#taskList{
+    display:flex;
+    width:40 vw;
+    flex-direction: column;
+}
+*{
+    margin:0;
+}

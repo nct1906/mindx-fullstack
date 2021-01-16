@@ -1,0 +1,26 @@
+.container{
+    margin:0 auto;
+    padding:5vw;
+    text-align: center;
+    width:50vw;
+    height:90vh;
+    background-color:  #8DC8B4;
+    color:white;
+    font-family: Arial, sans-serif;
+}
+input{
+    width:25vw;
+    border:none;
+    padding:1vw;
+    font-family: Arial, sans-serif;
+    
+}
+#postForm,#books{
+    background-color: #1D4F44;
+    padding:4vh;
+    width:40vw;
+    margin:0 auto;
+}
+*{
+    margin:0 0;
+}

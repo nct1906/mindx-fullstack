@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <title>Book List</title>
+</head>
+
+<body>
+    <script src="index.js" type="module"></script>
+    <div class="container">
+        
+        
+        <form id="postForm" method="post">
+            <h2>Post a Book!</h2> 
+            <input type="text" id="title" name="title" placeholder="Title" required><br>
+            <input type="text" id="author" name="author" placeholder="Author" required><br> 
+            <input type="text" id="isbn" name="isbn" placeholder="ISBN" required><br>
+            <br>
+            <button type="submit">Add Book</button>
+            <br>  
+            
+        </form>
+        <br>
+        <br>
+        <div id="books">
+        <h1>Your Book List</h1>
+        <div id="bookList"></div>
+        <input id ="search" type="text" name="search" placeholder="Search for Book"><br>
+        <br>
+        </div>
+        
+    </div>
+</body>
+
+</html>
