@@ -6,22 +6,23 @@ data = JSON.parse(data.toString());
 
 function getDetailStudent(id) {
   const student = data.find(stu => stu['_id'] === id);
-  return {student};
+  return student;
 }
-console.log(getDetailStudent('jubuq3lfmjjmp0wrdeupt'))
+getDetailStudent('jubuq3lfmjjmp0wrdeupt')
 
 // Lấy số lượng học sinh có từ Nguyễn
 function getCountStudentWithLastName(lastName) {
-  let lastNameMatch = data.filter(student => student['name'].split(' ')[0] === lastName);
-  return lastNameMatch.length;
+  let lastNameMatch = data.filter(student => student['name'].split(' ')[0] === lastName).length;
+  return parseInt(lastNameMatch);
 }
-console.log(getCountStudentWithLastName('Nguyễn'));
+getCountStudentWithLastName('Nguyễn');
 
 // Tính điểm trung bình của toàn bộ sinh viên (làm tròn đến một chữ số sau dấu phẩy)
 function calAverageMark() {
-  return total = data.map(student => student['mark']).reduce((sum, li) => sum + li, 0)/data.length;
+  let average = data.map(student => student['mark']).reduce((sum, li) => sum + li, 0)/data.length;
+  return Math.round(average * 10) / 10
 }
-console.log(calAverageMark())
+calAverageMark()
 
 // Ghi ra số lượng học sinh đạt điểm 10 ra file output.txt (sử dụng hàm ghi đồng bộ);
 function writeCountStudentGet10MarkToFile() {
