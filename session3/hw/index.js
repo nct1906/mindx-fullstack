@@ -19,13 +19,16 @@ console.log(getCountStudentWithLastName('Nguyễn'));
 
 // Tính điểm trung bình của toàn bộ sinh viên (làm tròn đến một chữ số sau dấu phẩy)
 function calAverageMark() {
-  let total = data.map(student => student['mark']).reduce((sum, li) => sum + li, 0)/data.length
-  return 0;
+  return total = data.map(student => student['mark']).reduce((sum, li) => sum + li, 0)/data.length;
 }
 console.log(calAverageMark())
 
 // Ghi ra số lượng học sinh đạt điểm 10 ra file output.txt (sử dụng hàm ghi đồng bộ);
-function writeCountStudentGet10MarkToFile() {}
+function writeCountStudentGet10MarkToFile() {
+  let student10Num = data.filter(student => student['mark'] == 10).length.toString()
+  fs.writeFileSync('output.txt', student10Num)
+}
+writeCountStudentGet10MarkToFile()
 
 module.exports = {
   getDetailStudent,
