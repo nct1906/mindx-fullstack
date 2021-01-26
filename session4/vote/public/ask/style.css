@@ -1,0 +1,8 @@
+#questionForm{
+    display:flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 10vh 15vw;
+    align-items: center;
+   
+}
